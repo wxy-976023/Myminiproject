@@ -1,2 +1,15 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<view bindtap="handleViewClick">哈哈哈</view>
+<!-- 第二种获取用户信息的方式 -->
+<button size="mini" 
+        open-type="getUserInfo"
+        bindgetuserinfo="handleGetUserInfo">
+  获取授权
+</button>
+<!-- 第三种 获取用户的名字和头像 -->
+<open-data type="userNickName"></open-data>
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+
+<view wx:for="{{list}}">{{item.title}}</view>
+

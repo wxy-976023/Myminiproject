@@ -1,4 +1,10 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
-<div class="title">hello</div>
-<button size="mini">lala</button>
+<!-- 1.小程序的数据绑定 -->
+<view>hello {{name}}</view>
+<view>{{age}}</view>
+<!-- 列表的数据绑定 wx:for-->
+<view wx:for="{{students}}">{{item.name}}-{{item.id}}</view>
+<!-- 事件监听 -->
+<view>数值：{{counter}}</view>
+<button size="mini" bindtap="btnAdd">+</button>
+<button size="mini" bindtap="btnSub">-</button>
