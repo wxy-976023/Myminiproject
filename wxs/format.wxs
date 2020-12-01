@@ -1,0 +1,10 @@
+function numberFormat(price,n){
+  // 默认保留两位小数
+  var num = n || 2;
+  // 将字符串转化数字
+  var f_price = parseFloat(price);
+  return f_price.toFixed(num)
+}
+module.exports = {
+  numberFormat:numberFormat
+}

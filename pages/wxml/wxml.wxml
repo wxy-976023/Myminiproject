@@ -1,0 +1,44 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+<!-- mustache的用法 -->
+<!-- <view>现在时间是：{{nowTime}}</view> -->
+<button size="mini" bindtap="handleChange">切换颜色按钮</button>
+<!-- 三目运算符绑定属性 -->
+<view class="hh {{isActive ? 'active' : ''}}">hahha</view>
+<view>------------------条件判断---------------------</view>
+<!-- wx:if -->
+<button bindtap="handleShow">切换显示</button>
+<view wx:if="{{isShow}}">我显示了</view>
+<!-- wx:elif wx:else  -->
+<button bindtap="add10">分数增加10</button>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+<!-- hidden wx:if -->
+<!-- hidden将组件隐藏起来 该组件依然是存在的-->
+<view>-----------------列表渲染------------------</view>
+<!-- <view wx:for="{{['abc,cba,nba']}}">{{item}}</view>
+<view wx:for="codewxx">{{item}}</view>
+<view wx:for="{{10}}">{{item}}-{{index}}</view> -->
+<view>-----------------block标签------------------</view>
+<!-- <block wx:for="{{3}}">
+  <view>你好</view>
+  <view>我好</view>
+  <view>大家好</view>
+</block> -->
+<view>-----------index,item起名字--------------</view>
+<!-- <view wx:for="{{movies}}" wx:for-item="m" wx:for-index="i">{{m}}-{{i}}</view> -->
+<view>-----------模板的用法--------------</view>
+<template name="tempItem">
+  <button size="mini">{{btnText}}</button>
+  <view>{{vText}}</view>
+</template>
+<!-- 模板绑定动态字段 -->
+<!-- <template is="tempItem" data="{{btnText:'你好',vText:'我好'}}"></template>
+<template is="tempItem" data="{{btnText:'hello',vText:'world'}}"></template>
+<template is="tempItem" data="{{btnText:'他好',vText:'她好'}}"></template> -->
+
+<!-- wxml的导入有两种：
+  import导入：1.主要是导入模板2.不能递归导入
+  include导入：1.将公共的wxml抽取到一个模板2.不能导入template和wxs，可以递归 -->

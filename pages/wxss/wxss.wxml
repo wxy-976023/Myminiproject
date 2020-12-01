@@ -1,0 +1,4 @@
+<!--pages/wxss/wxss.wxml-->
+<text>pages/wxss/wxss.wxml</text>
+<!-- 样式的三种写法：行内样式>页内样式>全局样式 -->
+<!-- rpx/格式导入@import/引入WeUI -->
