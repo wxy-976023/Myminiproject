@@ -1,0 +1,14 @@
+<!--pages/input/input.wxml-->
+<text>pages/input/input.wxml</text>
+<!-- 1.value -->
+<input value="你好"/>
+<!-- 2.type键盘属性 文本/数字/身份证-->
+<input type="number"/>
+<!-- 3.placeholder：占位字符 -->
+<input placeholder="请输入字符"/>
+<!-- 4.password:暗文显示 -->
+<input password/>
+<!-- input绑定事件 -->
+<input bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"/>

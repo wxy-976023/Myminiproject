@@ -1,0 +1,23 @@
+/* pages/view/view.wxss */
+.box {
+  background-color: blue;
+}
+.box0 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  margin-top: 10px;
+}
+.box1 {
+  background-color: skyblue;
+  font-size: 30px;
+}
+.box00 {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  margin-top: 20px;
+}
+.box11 {
+  background-color: orange;
+}

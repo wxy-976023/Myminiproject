@@ -1,0 +1,17 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml\n</text>
+<!-- 1.size=mini变为行内块可以一行显示 -->
+<button size="mini">你好</button>
+<button size="mini">我好</button>
+<!-- 2. plain:镂空效果-->
+<button size="mini" plain>按钮</button>
+<!-- 3.type 设置属性 -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!-- 4.loading 加载效果-->
+<button size="mini" loading="{{isShow}}">按钮</button>
+<!-- 5.hover-class按钮点击效果 -->
+<button hover-class="perssed">按钮</button>
+
+

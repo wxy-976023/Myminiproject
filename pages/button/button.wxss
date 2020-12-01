@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.perssed {
+  background-color: skyblue;
+  color: #fff;
+}

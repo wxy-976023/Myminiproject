@@ -1,0 +1,13 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+<!-- view一共有4种属性 -->
+<!-- 1.view基本使用 -->
+<view class="box">你好</view>
+<!-- 2.hover-class 和 hover-stay-time默认400-->
+<view class="box0" hover-class="box1" hover-stay-time="0">我好</view>
+<!-- 3.hover-stop-propagation阻止祖先元素的点击态 -->
+<view class="box00" hover-class="box11">
+  <view class="box0" 
+        hover-class="box1"
+        hover-stop-propagation>我好</view>
+</view>

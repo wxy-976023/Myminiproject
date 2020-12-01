@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!-- 组件们的共同属性：1.id,class -->
+<view id="vv" class="xx">你好</view>
+<!-- 2.hidden属性 -->
+<view hidden>哈哈哈哈</view>
+<!-- style 、data-* \ bind\catchtap 后面会讲 -->
