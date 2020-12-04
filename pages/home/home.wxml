@@ -11,3 +11,29 @@
 <!-- 3.自定义组件发出事件 -->
 <view>点击结果：{{counter}}</view>
 <my-event bind:cpnIcrement="handleIncrement"></my-event>
+<!-- 4.tabcontrol的实现（在about页面） -->
+<!-- 5.选中组件修改组件内数据 -->
+<view>-----------------------------------------</view>
+<button size="mini" bindtap="handleAddcpn">修改组件内数据</button>
+<my-sel class="sel-class" id="sel-id"></my-sel>
+<!-- 6.插槽的使用 -->
+<!-- 6.1单个插槽 -->
+<view>-----------------------------------------</view>
+<my-slot>
+  <button size="mini">我是按钮</button>
+</my-slot>
+<my-slot>
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+</my-slot>
+<my-slot>
+  <slider value="70"></slider>
+</my-slot>
+<!-- 6.2多个插槽 -->
+<view>-----------------------------------------</view>
+<my-mslots>
+  <!-- 1.必须给每个插槽起名字 -->
+  <!-- 2.必须给组件对象放options选项 :mutipleSlots:true-->
+  <button size="mini" slot="slot2">我是多插槽按钮</button>
+  <image src="/aasets/img/14.jpg" slot="slot1"></image>
+  <slider slot="slot3" value="80"></slider>
+</my-mslots>

@@ -13,7 +13,17 @@ Page({
       counter:this.data.counter+1
     })
   },
-
+  handleAddcpn(){
+    // 目的：修改组件中数据
+    // 1.获取组件对象
+    const selcpn = this.selectComponent(".sel-class");
+    // 2.通过setdata修改数据（不推荐）
+    // selcpn.setData({
+    //   counter:selcpn.data.counter+20
+    // })
+    // 3.通过方法进行修改数据
+    selcpn.addCounter(10)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

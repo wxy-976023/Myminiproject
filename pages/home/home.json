@@ -2,6 +2,9 @@
   "usingComponents": {
     "my-cpn":"/components/my-cpn/my-cpn",
     "my-prop":"/components/my-prop/my-prop",
-    "my-event":"/components/my-event/my-event"
+    "my-event":"/components/my-event/my-event",
+    "my-sel":"/components/my-sel/my-sel",
+    "my-slot":"/components/my-slot/my-slot",
+    "my-mslots":"/components/my-mslots/my-mslots"
   }
 }

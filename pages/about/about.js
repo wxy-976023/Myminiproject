@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  itemTrigger(event){
+    const index=event.detail.index;
+    const item =event.detail.item;
+    console.log("点击了",index,item)
   }
 })

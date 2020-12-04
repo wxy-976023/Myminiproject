@@ -1,4 +1,6 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
-<div class="title">hello</div>
-<button size="mini">lala</button>
+<!-- tabcontrol 的实现 -->
+<tab-control element="{{['流行','精选','热门']}}"
+             bind:itemTrigger="itemTrigger">
+</tab-control>
+
