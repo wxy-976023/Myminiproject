@@ -1,1 +1,10 @@
 /* pages/home/home.wxss */
+.red {
+  color: pink;
+}
+.blue {
+  color: skyblue;
+}
+.orange {
+  color: orangered;
+}

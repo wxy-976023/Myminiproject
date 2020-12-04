@@ -1,0 +1,6 @@
+/* components/my-cpn/my-cpn.wxss */
+.text {
+  font-size: 50rpx;
+  font-weight: 700;
+}
+/* 自定义组件里不推荐使用id选择器、属性选择器和标签选择器 */

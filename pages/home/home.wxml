@@ -1,2 +1,13 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!-- 1.自定义组件 -->
+<my-cpn></my-cpn>
+<my-cpn></my-cpn>
+<my-cpn></my-cpn>
+<!-- 2.给自定义组件传递数据 / 样式-->
+<my-prop title="我是标题1" content="11111111111" titleclass="red"></my-prop>
+<my-prop title="我是标题2" content="22222222222" titleclass="blue"></my-prop>
+<my-prop titleclass="orange"></my-prop>
+<!-- 3.自定义组件发出事件 -->
+<view>点击结果：{{counter}}</view>
+<my-event bind:cpnIcrement="handleIncrement"></my-event>
