@@ -1,0 +1,30 @@
+/* components/x-goods-item/x-goods-item.wxss */
+.goods {
+  text-align: center;
+  padding-bottom: 85rpx;
+}
+.goods .img {
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.iteminfo {
+  font-size: 30rpx;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 5rpx;
+}
+.iteminfo .ititle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.iteminfo .price {
+  padding-right: 20rpx;
+  color: #ff5777;
+}
+.iteminfo .icon {
+  width: 28rpx;
+  height: 28rpx;
+}

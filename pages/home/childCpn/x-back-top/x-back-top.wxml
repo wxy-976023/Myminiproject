@@ -1,0 +1,6 @@
+<!--pages/home/childCpn/x-back-top/x-back-top.wxml-->
+<view class="back-top">
+  <image src="/assets/img/backtop/back.png" 
+         class="img" mode="widthFix"
+         bindtap="handleBack"></image>
+</view>
